@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Co.,Ltd</title>
+    <meta name="keywords" content="Cleaning Service">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/png" href="../assets/ghlogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <!---------SCRIPT CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+
+    <nav id="nav-bar"><!------navigation----------->
+      <div class="nav-wrapper" id="mobile-nav">
+        <div class="logo-area">
+          <img class="gh-logo" src="../assets/ghlogo.png" alt="">
+          <img class="ppcs-logo" src="../assets/ppcslogo.png" alt="">
+        </div>
+        <div class="nav-list">
+          <ul class="nav-item">
+              <li class="nav-link"><a class="now" href="home">ပင္မစာမ်က္နာ</a></li>
+              <li class="nav-link"><a href="about_us">အေၾကာင္း</a></li>
+              <li class="nav-link"><a href="service">ဝန္ေဆာင္မႈ</a></li>
+              <li class="nav-link"><a href="gallery">ုံျပခန္း</a></li>
+              <li class="nav-link"><a href="contact">ဆက္သြယ္ရန္</a></li>
+          </ul>
+        </div>
+        <div class="get-quo">
+            <div class="container-box rotated">
+                <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">ေဈးႏႈန္းရယူရန္</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">ေဈးႏႈန္းရယူရန္</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" >
+                                <p>သင်၏စာကိုအောက်ပါပုံစံဖြင့်ပို့ပါ။ ကျွန်ုပ်တို့သည်သင့်ထံအမြန်ဆုံးပြန်ပို့ပါမည်</form>
+                                <div class="form-group">
+                                    <label for="name"> အမည်</label>
+                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">အီးမေးလ်</label>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">ဖုန်း</label>
+                                    <input type="email" class="form-control" id="phone" name="phone" required maxlength="50">
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">ပို့မည် &rarr;</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>အောင်မြင်ပါသည်</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>အမှား</h3> ထပ်မံကြိုးစားပါ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+        <div class="lan-switch">
+          <a href="home"><img class="mm-flag" src="../assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+          <a href="../home"><img class="uk-flag" src="../assets/ukflag.jpg" alt="English" title="English"></a>
+        </div>
+      </div>
+
+    </nav>
+    <div onclick="menu()" class="bar" id="bar">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div> <!------navigation----------->
+
+<!------------------ xxx ------------------>
+<section id="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(../assets/banner-1.jpg)"></div>
+        <!--<div class="swiper-slide" style="background-image: url(../assets/banner-2.jpg)"></div>-->
+        <div class="swiper-slide" style="background-image: url(../assets/banner-3.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+</div>
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1406.09 190.97"><defs><style>.cls-1{fill:rgb(235, 236, 236);}</style></defs><path class="cls-1" d="M0,273S413.13,16.75,619.38,169.88s532.81,58.59,532.81,58.59l253.9-68V308.16L0,312.06Z" transform="translate(0 -121.09)"/></svg>
+</section>
+<!------------------ xxx ------------------>
+<section id="about-us">
+  <div class="about-wrapper">
+    <h1 data-aos="zoom-in">About</h1>
+    <p>Golden Hiro Services Co.,Ltd., in partnership with Hiro Industry Co.,Ltd., was founded in Myanmar in 2016. With the principle of providing quality services established by its parent company, Golden Hiro continues to operate its cleaning services including High-rise Access Services.
+      <br>
+      In 2019, Golden Hiro started to introduce pest control services across Myanmar with an intention to fulfil the extra needs of the existing clients and to attract new clients. Moreover, we merged with P.P.C.S cleaning services in 2019 in order to share the knowledge and skills the two companies have. Together we create the positive synergy by being innovative and effective in terms of technology and techniques respectively.
+      <br>
+      </p>
+      <div data-aos="fade-up">
+        <a href="about_us">see more</a>
+      </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service">
+  <div class="service-wrapper">
+    <h1 data-aos="zoom-in" data-aos-delay="500">Services</h1>
+    <div class="container">
+      <div class="row">
+        <div class="service-card col-md-3">
+          <img src="../assets/service_cl.png" alt="cleaning service">
+          <h3>Cleaning <br> Services</h3>
+          <div class="service-inner" data-aos="fade-left" data-aos-delay="1000">
+            <p>• Event cleaning: From single room conferences to large-scale public gatherings, we provide cleaning before, during and after a range of events, ensuring that the venue is kept in prime condition at every step of the process.
+              <br>
+              • Pub & restaurant cleaning: With pubs and restaurants regularly subjected to health
+            </p>
+          </div>
+          <div data-aos="fade-up">
+            <a href="service#service-clean">read more</a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-hg.png" alt="High-rise Access service">
+          <h3>High-rise Access <br> Services</h3>
+          <div class="service-inner" data-aos="zoom-in" data-aos-delay="1000">
+            <p>Through the use of rope access, we can safely access a wide variety of different commercial high rise applications. Commercial high rise access requires strict adherence to safety standards and should not be taken lightly. Proper training, knowledge, and experience are a core value at High Altitude Services.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service#service-high">read more</a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-pest.png" alt="Pest Control service">
+          <h3>Pest Control <br> Services</h3>
+          <div class="service-inner" data-aos="zoom-in" data-aos-delay="1000">
+            <p>Residential Pest Control
+              <br>• Crawling and Flying Insects 
+              <br>• Special Termite Protection Service 
+              <br>• Rodents and Others
+              <br><br>
+              Commercial Pest Control 
+              <br>• Special Pest protection for Food Services (Restaurants, Food Stores etc.) 
+              <br>• Pest Control for Factories & Warehouses 
+              </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service#service-pest">read more</a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-dis.png" alt="disinfection service">
+          <h3>Disinfection <br> Services</h3>
+          <div class="service-inner" data-aos="fade-right" data-aos-delay="1000">
+            <p>As the cleaning experts, PPCS works closely with customers to understand which areas require disinfection and deep cleaning. Our focus is on establishing the cleaning solutions and methodology depending on our customers’ needs and severity level – we will work closely with you to ensure we provide the
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service#service-dis">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="gallery">
+  <div class="gallery-wrapper">
+    <h1 data-aos="zoom-in">Gallery</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <figure><a href="gallery#cl-ns"><img src="../assets/cleaning.jpg"/></a></figure>
+          <span>click for more</span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery#hg-ns"><img src="../assets/high-rise.jpg"/></a></figure>
+          <span>click for more</span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery#pc-ns"><img src="../assets/pest-control.jpg"/></a></figure>
+          <span>click for more</span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery#ds-ns"><img src="../assets/disinfection.jpg"/></a></figure>
+          <span>click for more</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="contact">
+  <div class="contact-wrapper">
+    <div data-aos="zoom-in">
+      <h1>Contact</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="contact-left col-md-6">
+          <h5>Please do not hesitate to call us for more information</h5>
+          <div class="row">
+            <div class="col-md-3">
+              <p data-aos="fade-right" data-aos-delay="1200"><i class="fa fa-building" aria-hidden="true"></i> Head Office</p>
+              <p data-aos="fade-right" data-aos-delay="1400"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Number</p>
+              <p data-aos="fade-right" data-aos-delay="1600"><i class="fa fa-envelope" aria-hidden="true"></i> Email Address</p>
+              <p data-aos="fade-right" data-aos-delay="1800"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</p>
+            </div>
+            <div class="col-md-9">
+              <p data-aos="fade-right" data-aos-delay="0">: <a href="">45,Aung Myay Yadanar .st,Thingangyun Tsp,Yangon,11072</a></p>
+              <p data-aos="fade-right" data-aos-delay="200">: <a href="tel:09210654987">09 210 654 987</a></p>
+              <p data-aos="fade-right" data-aos-delay="400">: <a href="mailto:info@ghppcs.com">info@ghppcs.com</a></p>
+              <p data-aos="fade-right" data-aos-delay="600">: <a href="https://www.facebook.com/ppcsprofessionalcleaningservices">PPCS Professional Cleaning Services</a></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="contact-right col-md-6">
+            <form id="contact-form" method="post" class="tm-contact-form" action="mail/mail_handler.php" name="form">
+              <div class="form-item">
+                <input type="text" id="contact_name" name="visitor_name" class="form-input" 
+                required="required" data-validation-required-message="Please enter your name."/>        
+                <span class="enter">Name</span>
+              </div>
+              <div class="form-item">
+                <input type="tel" id="contact_number" name="visitor_phone" class="form-input"
+                required="required" data-validation-required-message="Please enter your contact number."/>
+                <span class="enter">Contact number</span>
+              </div>
+              <div class="form-item">
+                <input type="email" id="contact_email" name="visitor_email" class="form-input"
+                required="required" data-validation-required-message="Please enter your email address."/>
+                <span class="enter">Email</span>
+              </div>
+              <div class="form-item">
+                <textarea rows="6" id="contact_message" name="visitor_message" class="form-input"
+                required="required" data-validation-required-message="Please enter a message."></textarea>
+                <span class="enter">Message</span>
+              </div>
+              <div class="form-item">
+                <button type="submit" class="btn" value="SEND MESSAGE">Send</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.012994796031!2d96.18504811536633!3d16.82571142318809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f09a3d2229%3A0xf64dc5023878e566!2sPPCS%20Cleaning%20Services!5e0!3m2!1sen!2smm!4v1591850735077!5m2!1sen!2smm" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+
+
+<script>
+      AOS.init({
+        duration: 1000,
+      });
+
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay:{
+            delay: 5000,
+            disableOninteraction: false
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Services Co.,ltd</title>
+    <meta name="keywords" content="Cleaning Service, Disinfection, Pest Control">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/jpg" href="assets/GHlogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!---------SCRIPT CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <nav id="nav-bar"><!------navigation----------->
+        <div class="nav-wrapper" id="mobile-nav">
+          <div class="logo-area">
+            <img class="gh-logo" src="assets/GHlogo.jpg" alt="">
+            <img class="ppcs-logo" src="assets/ppcslogo.png" alt="">
+          </div>
+          <div class="nav-list">
+            <ul class="nav-item">
+                <li class="nav-link"><a href="index.htm"> Home </a></li>
+                <li class="nav-link"><a href="about_us.htm"> About </a></li>
+                <li class="nav-link"><a class="now" href="service.htm"> Service </a></li>
+                <li class="nav-link"><a href="gallery.htm"> Gallery </a></li>
+                <li class="nav-link"><a href="contact.htm"> Contact </a></li>
+            </ul>
+          </div>
+          <div class="get-quo">
+              <div class="container-box rotated">
+                  <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">Get Quotation</button>
+              </div>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h4 class="modal-title">Get Quotation</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                              <form role="form" method="post" id="reused_form" action="mail/getquo.php">
+                                  <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                                  <div class="form-group">
+                                      <label for="name"> Name:</label>
+                                      <input type="text" class="form-control" id="name" name="visitor_name" required maxlength="50">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email"> Email:</label>
+                                      <input type="email" class="form-control" id="email" name="visitor_email" required maxlength="50">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phone"> Phone:</label>
+                                      <input type="phone" class="form-control" id="phone" name="visitor_phone" required maxlength="50">
+                                  </div>
+                                  <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Send Now</button>
+                              </form>
+                              <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                              <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+  
+          <div class="lan-switch">
+            <a href="./mm/service.htm"><img class="mm-flag" src="assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+            <a href="home"><img class="uk-flag" src="assets/ukflag.jpg" alt="English" title="English"></a>
+          </div>
+        </div>
+  
+      </nav>
+      <div onclick="menu()" class="bar" id="bar">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div> <!------navigation----------->
+<!------------------ xxx ------------------>
+<section id="service-banner">
+    <div class="s-banner">
+        <h1 data-aos="zoom-in">Four Core Services</h1>
+        <div class="row">
+            <div class="content-left col-md-6">
+                <h3 data-aos="fade-right" data-aos-delay="500">Cleaning Services</h3>
+                <p>The company focuses on providing hygiene related services such as residential and commercial cleaning and pest control. These services are readily available across Myanmar.
+                <br>
+                
+                With the profound knowledge and experiences of commercial cleaning, we are able to meet or exceed the requirements and expectations of our clients in terms of quality and price. We are currently offering our commercial cleaning services to all businesses regardless of their sizes, their locations, and their nature. This includes offices, small shops, supermarkets, shopping malls, factories, pharmaceutical companies and hospitals. To be specific, our cleaning services to the commercial premises will be the followings:</p>
+                <div  data-aos="flip-down" data-aos-delay="1000">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-clean">see more</a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190">call</a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm">message</a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#cl-ns">portfolio</a></button>
+                </div>
+             </div>
+            <div class="content-left col-md-6">
+                <div class="s-img" style="background-image: url(images/h1.png);">
+                </div>
+            </div>
+        <div class="row">
+            <div class="content-right col-md-6">
+                <div class="s-img" style="background-image: url(images/Highrise08.jpg);">
+                </div>
+            </div>
+            <div class="content-right col-md-6">
+                <h3 data-aos="fade-left" data-aos-delay="200">High-rise Access Services</h3>
+                <p>Through the use of rope access, we can safely access a wide variety of different commercial high rise applications. Commercial high rise access requires strict adherence to safety standards and should not be taken lightly. Proper training, knowledge, and experience are a core value at High Altitude Services. To get the job done safely, we had our service technicians trained properly by International Rope Access Trade Association, IRATA. Our technicians have Level 1, 2 and 3 certificates from IRATA.
+                </p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-high">see more</a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190">call</a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm">message</a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#hg-ns">portfolio</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-left col-md-6">
+                <h3 data-aos="fade-right">Pest Control Services</h3>
+                <p>Residential Pest Control <br>
+                    • Crawling and Flying Insects <br>
+                    • Special Termite Protection Service <br>
+                    • Rodents and Others <br>
+                    Commercial Pest Control <br>
+                    • Special Pest protection for Food Services (Restaurants, Food Stores etc.) <br>
+                    • Pest Control for Factories & Warehouses <br>
+                    • Preconstruction Pest Control (Soil treatment etc.)</p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-pest">see more</a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+959765418274">call</a></i></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"><a href="contact.htm">message</a></i></button>
+                    <button class="btn-4"><i class="fa fa-picture-o" aria-hidden="true"><a href="gallery.htm#pc-ns">portfolio</a></i></button>
+                </div>
+            </div>
+            <div class="content-left col-md-6">
+                <div class="s-img" style="background-image: url(images/Pestcontrol02.jpg);">
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="content-right col-md-6">
+                <div class="s-img" style="background-image: url(images/d7.png);">
+                </div>
+             </div>
+            <div class="content-right col-md-6">
+                <h3 data-aos="fade-left">Disinfection Services</h3>
+                <p>As the cleaning experts, PPCS works closely with customers to understand which areas require disinfection and deep cleaning. Our focus is on establishing the cleaning solutions and methodology depending on our customers’ needs and severity level – we will work closely with you to ensure we provide the solutions that adhere to guidelines established by local authorities. We also offer high-frequency cleaning to disinfect high-touch or high-footfall areas and deep cleaning.
+                    Depending on the severity levels, we advise customers on how to minimise risks through step-up (High frequency) cleaning. We continually keep our customers informed and aware of good hand hygiene habits, social distancing and advising in case of symptoms for the virus.
+                   </p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-dis">see more</a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190">call</a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm">message</a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#ds-ns">portfolio</a></button>
+                </div>
+                   
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-clean">
+    <div class="clean-wrapper">
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+        <h3 data-aos="zoom-in">Cleaning Services</h3>
+        <div class="clean-wrapper-inner container">
+            <h4>Commercial Cleaning</h4>
+            <p>With the profound knowledge and experiences of commercial cleaning, we are able to meet or exceed the requirements and expectations of our clients in terms of quality and price. We are currently offering our commercial cleaning services to all businesses regardless of their sizes, their locations, and their nature. This includes offices, small shops, supermarkets, shopping malls, factories, pharmaceutical companies and hospitals. To be specific, our cleaning services to the commercial premises will be the followings:
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Office cleaning</h5>
+                                <p>This type of service basically includes dusting surfaces, and sweeping and mopping floors. Depending on the situations of the workplace or the requests of our customers, additional services such as scrubbing floors and disinfecting toilet facilities will be provided.
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Event cleaning</h5>
+                                <p> There are three phrases of cleaning the areas where the event occurs. First, our service teams will sweep and scrub the floors to keep the areas clean before the event starts. During the course of the event, our staffs will be collecting wastes and debris, and replenish the consumables in the restrooms to keep the event running without any disturbance. Finally, the used areas will be cleaned thoroughly to make it look as it is before. 
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Pub & restaurant cleaning</h5>
+                                <p>Cleanliness of a restaurant or a pub is the first impression you can get from your customers. Thus, you can simply leave that to our seasoned professional cleaners to help your restaurant or pub meet the health and safety standards. A regular sanitization will create a healthy and safe environment for all the consumers and those working there.
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Sports & leisure cleaning</h5>
+                                <p>Gyms or fitness facilities are usually traffic areas where many people from different places gather to do their physical trainings. Changing areas, locker rooms, showers and training equipment are the high-touch areas which require regular sanitization to prevent any germs and bacteria from spreading, especially during the Covid-19 pandemic. Our highly trained service team will tackle all these issues so that you can focus solely on running your business.
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>End of tenancy cleaning</h5>
+                                <p>A deep cleaning service is offered to residential buildings which are intended for rental purposes. Then, the property owners can easily attract new tenants with their clean apartments. This service includes dusting walls and ceilings, cleaning windows inside and out, scrubbing surface areas, and cleaning kitchen and restrooms. 
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Ventilation cleaning</h5>
+                                <p>Any commercial property with vents or extraction units need consistent maintenance so that dirt, dust and debris do not accumulate and become hazardous to people’s health. Our commercial cleaning services are trusted throughout Myanmar to tackle such issues.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            And we have professional floor cleaning service too... <br><br>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Machine scrubbing</h5>
+                    <p>Commercial floors take quite a beating. We’ll scrub away the grimy layers to reveal the original floor beneath.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Stripping, waxing and buffing</h5>
+                    <p>Floor maintenance can be tricky since the method may vary on the specific types of flooring such as vinyl, tiles, laminate and so on. However, you can leave all the hassles of the work to our floor technicians. Stripping floor is required in order to remove all the dust and debris from your floor. Waxing is recommended for the appearance and longevity of your floor. Then, a regular buffing can be done to keep the floor in good condition at all time.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Sealing and finishing</h5>
+                    <p> Sealing is recommended in order to coat and protect your floor from a surface staining, scratches and other damages. In addition to that, a floor finish can be applied as a top layer of the existing floor. This top layer of floor is not only for protective reasons but also for decorative purposes.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Concrete floor sealing</h5>
+                    <p>Regular resealing extends the lifespan of your concrete flooring. We’ll keep it in top shape. We’ll revive your tired concrete floor with a brand-new finish and protect it with a durable seal.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Tile and grout cleaning</h5>
+                    <p>To have a clean tile and grout, we follow the simple process.With the use of a vaccum cleaner or a sweeper, all the dust and soil will be swept away first. Then, a proper cleaning solution will be applied to the area and the surface area of the tile or grout will be throughly scrubbed with a scrubbing machine.Finally, all the residuals on the cleanig area will be washed away by rinsing with a cool water properly. We can now get a clean tile and grout floor for you.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Carpet steam cleaning</h5>
+                    <p>Got carpets too? Steam cleaning service is readily available for you. With its good suction power, our steam cleaner can easily remove all the dirt and debris from the fibries. Moreover, all the bacterias inside the carpet will then be eliminated.Thus, you can have a clean carpet which is free of germs.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Vinyl floor reconditioning</h5>
+                    <p>Worn Vinyl floors get a new life with our reconditioning method.
+                    </p>
+                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-high">
+    <div class="high-wrapper">
+        <h3 data-aos="zoom-in">High-rise Access Services</h3>
+        <div class="high-wrapper-inner container">
+            <p>Through the use of rope access, we can safely access a wide variety of different commercial high rise applications. Commercial high rise access requires strict adherence to safety standards and should not be taken lightly. Proper training, knowledge, and experience are a core value at High Altitude Services. To get the job done safely, we had our service technicians trained properly by International Rope Access Trade Association, IRATA. Our technicians have Level 1, 2 and 3 certificates from IRATA.
+            </p>
+            <h4 data-aos="fade-right">Service Range <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h4>
+            <div class="service-range-inner">
+                <div class="row">
+                    <div class="one col-md-4">
+                        <img src="images/Highrise09.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise Cleaning</p>
+                    </div>
+                    <div class="two col-md-4">
+                        <img src="images/Highrise10.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise repair <br>and Installation</p>
+                    </div>
+                    <div class="three col-md-4">
+                        <img src="images/Highrise11.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise Painting</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-pest">
+    <div class="layer-2">
+        <img src="assets/layer2.png" alt="">
+    </div>
+    <div class="pest-wrapper">
+        <h3 data-aos="zoom-in">Pest Control Services</h3>
+        <div class="pest-wrapper-inner container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 data-aos="fade-right"><i class="fa fa-chevron-right" aria-hidden="true"></i>Residential Pest Control</h4>
+                    <ul>
+                        <li>- Crawling and Flying Insects</li>
+                        <li>- Special Termite Protection Service </li>
+                        <li>- Rodents and Others</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 data-aos="fade-right"><i class="fa fa-chevron-right" aria-hidden="true"></i>Commercial Pest Control </h4>
+                    <ul>
+                        <li>- Special Pest protection for Food Services (Restaurants, Food Stores etc.) </li>
+                        <li>- Pest Control for Factories & Warehouses</li>
+                        <li>- Preconstruction Pest Control (Soil treatment etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ipm-step">
+            <h4 data-aos="fade-in">Integrated Pest Management (IPM) - 5 Steps</h4>
+            <div class="ipm-circle" data-aos="fade-in" data-aos-delay="500">
+                <img src="assets/ipm-circle.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-dis">
+    <div class="dis-wrapper container">
+        <h3 data-aos="zoom-in">Disinfection Services</h3>
+        <div class="dis-wrapper-inner" data-aos="fade-in" data-aos-delay="500">
+            <p>As the cleaning experts, PPCS works closely with customers to understand which areas require disinfection and deep cleaning. Our focus is on establishing the cleaning solutions and methodology depending on our customers’ needs and severity level – we will work closely with you to ensure we provide the solutions that adhere to guidelines established by local authorities. We also offer high-frequency cleaning to disinfect high-touch or high-footfall areas and deep cleaning. Depending on the severity levels, we advise customers on how to minimise risks through step-up (High frequency) cleaning. We continually keep our customers informed and aware of good hand hygiene habits, social distancing and advising in case of symptoms for the virus.</p>
+        </div>
+
+        <div class="dis-img-wrapper">
+            
+            <div class="column" data-aos="flip-up" data-aos-delay="200">
+                <img src="images/Disinfantant03.jpg" alt="">
+                <div class="show-hide">
+                    <!--<p>Disinfection at<br>Myanmar Plaza</p>-->
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="1000">
+                <img src="images/Disinfantant01.jpg" alt="">
+                <div class="show-hide">
+                      <!--<p>Disinfection at<br>MM Plaza</p>-->
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="800">
+                <img src="images/Disinfantant02.jpg" alt="">
+                <div class="show-hide">
+                   <!-- <p>Disinfection at<br>UBC Tower</p>-->
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="last-text">
+            <p>PPCS delivers fast response and an extensive range of expert disinfection services for businesses across Yangon to ensure potentially harmful and hazardous situations are dealt with in a safe, discreet and legally compliant manner.
+                Our professional specialist disinfection services provide reassurance to businesses that could be affected by potentially hazardous situations by eradicating harmful pathogens quickly and safely. Our methods of disinfection provide an essential resource for many authorities and commercial organisations because they help protect your business against infectious bacteria, viruses and disease.
+            <br><br>
+            Prevention is the best medicine. Safe, healthy workers and customers mean a healthier bottom line to your business.  
+            For example, a thoroughly cleaned and disinfected facility means improved profitability through:
+            80% reduced probability of catching a cold or flu 62% reduction in contaminated surfaces 46% reduction in absenteeism
+            </p>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<footer id="footer">
+    <button><a href="#nav-bar"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></button>
+    <div class="footer-wrapper">
+        <h6>copyright © 2020 <span>Golden Hiro Services Co.,ltd</span> | All right reserved.</h6>
+        <h6>&nbsp;</h6>
+    </div>
+</footer>
+<!------------------ xxx ------------------>
+
+
+<script>
+    AOS.init({
+        duration: 1000,
+      });
+
+    function menu() {
+    var x = document.getElementById("mobile-nav");
+      if (x.className === "nav-wrapper") {
+        x.className += "responsive";
+      } else {
+        x.className = "nav-wrapper";
+      }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+DirectoryIndex home
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.html]+)$ $1. [NC,L]

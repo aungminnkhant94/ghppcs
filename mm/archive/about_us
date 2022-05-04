@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Co.,Ltd</title>
+    <meta name="keywords" content="Cleaning Service">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/png" href="assets/ghlogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <!---------SCRIPT CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/aos.js"></script>
+<script src="../js/nav.js"></script>
+</head>
+<body>
+  <nav id="nav-bar"><!------navigation----------->
+    <div class="nav-wrapper" id="mobile-nav">
+      <div class="logo-area">
+        <img class="gh-logo" src="../assets/ghlogo.png" alt="">
+        <img class="ppcs-logo" src="../assets/ppcslogo.png" alt="">
+      </div>
+      <div class="nav-list">
+        <ul class="nav-item">
+            <li class="nav-link"><a href="home"> ပင်မစာမျက်နှာ </a></li>
+            <li class="nav-link"><a class="now" href="about_us"> ကုမ္ပဏီအကြောင်း </a></li>
+            <li class="nav-link"><a href="service">ဝန်ဆောင်မှု</a></li>
+            <li class="nav-link"><a href="gallery">ကြည့်ရှုဖွယ်ရာ</a></li>
+            <li class="nav-link"><a href="contact">ဆက်သွယ်ရန်</a></li>
+        </ul>
+      </div>
+      <div class="get-quo">
+          <div class="container-box rotated">
+              <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">ဈေးနှုန်းရယူရန်</button>
+          </div>
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">ေဈးႏႈန္းရယူရန္</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                          <form role="form" method="post" id="reused_form" >
+                              <p>သင်၏စာကိုအောက်ပါပုံစံဖြင့်ပို့ပါ။ ကျွန်ုပ်တို့သည်သင့်ထံအမြန်ဆုံးပြန်ပို့ပါမည်</form>
+                              <div class="form-group">
+                                  <label for="name"> အမည်</label>
+                                  <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">အီးမေးလ်</label>
+                                  <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                              </div>
+                              <div class="form-group">
+                                  <label for="name">ဖုန်း</label>
+                                  <input type="email" class="form-control" id="phone" name="phone" required maxlength="50">
+                              </div>
+                              <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">ပို့မည် &rarr;</button>
+                          </form>
+                          <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>အောင်မြင်ပါသည်</h3> </div>
+                          <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>အမှား</h3> ထပ်မံကြိုးစားပါ</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+      <div class="lan-switch">
+        <a href="home"><img class="mm-flag" src="../assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+        <a href="../home"><img class="uk-flag" src="../assets/ukflag.jpg" alt="English" title="English"></a>
+      </div>
+    </div>
+
+  </nav>
+  <div onclick="menu()" class="bar" id="bar">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div> <!------navigation----------->
+
+<!------------------ xxx ------------------>
+<section id="aboutus">
+    <div class="au-banner">
+        <div class="container">
+          <h1 data-aos="zoom-in" data-aos-delay="500">အကျဉ်းချုပ်သမိုင်း</h1>
+        <p data-aos="flip-up" data-aos-delay="1000">Golden Hiro Services Co., Ltd., in partnership with Hiro Industry Co., Ltd., founded in Japan in 2000, was established in Myanmar in 2016 and continues to operate based on the principle of providing high quality services practiced by its parent company. Although our parent company provides both cleaning service and pest control service, we started offering only cleaning service until 2019.</p>
+        <p data-aos="flip-up" data-aos-delay="1000">In 2019, we merged with P .P .C.S cleaning service offering cleaning solutions to booming commercial buildings industry.</p>
+        <p data-aos="flip-up" data-aos-delay="1000">We introduced our Pest Control Service to the market in 2019 with an intention to fulfil the extra needs of our clients.
+          </p>
+        </div>
+    </div>
+    <div class="au-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <h3 data-aos="fade-right" data-aos-delay="1500">Golden Hiro</h3>
+              <div class="progress-bar"> <span class="progress-value purple" style="width: 85%;"></span> </div> <span data-aos="fade-left" data-aos-delay="2000"><strong>High-rise Access Services</strong></span> <br/>
+              <div class="progress-bar"> <span class="progress-value yellow" style="width: 70%;"></span> </div> <span data-aos="fade-left" data-aos-delay="2000"><strong>Pest Control Services</strong></span> <br/>
+               
+          </div>
+          <div class="col-md-6">
+              <h3 data-aos="fade-left" data-aos-delay="1500">PPCS Professional Cleaning Service</h3>
+              <div class="progress-bar"> <span class="progress-value red" style="width: 65%;"></span> </div> 
+              <span data-aos="fade-left" data-aos-delay="2000"><strong>Cleaning Services</strong></span> <br/>
+              <div class="progress-bar"> <span class="progress-value green" style="width: 90%;"></span> </div> <span data-aos="fade-left" data-aos-delay="2000"><strong>Disinfection Services</strong></span> <br/>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="aboutus-vision">
+  
+    <div class="wrapper center-block">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading active" role="tab" id="headingOne">
+          <h2 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Our Vision
+            </a>
+          </h2>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="container">
+            <div class="panel-body">
+              We are constantly working to be recognized by our clients, employees and the industry as the most respected and the leading provider of one-stop cleaning services including high-rise access service, pest control services and disinfection services in Myanmar.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" data-aos="fade-up">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h2 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Our Mission
+            </a>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="container">
+            <div class="panel-body">
+              We are committed to providing the highest quality commercial cleaning service available by exceeding the expectations of our clients, as well as their employees and visitors to their premises or facilities through continuous improvements in Quality, Services and Productivity.  And we consider it our responsibility to provide support and valuable contributions to the quality of peoples’ lives beyond the scope of our operations. The role that a clean, safe and hygienic environment plays in making people happy cannot be underestimated.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+</section>
+<!------------------ xxx ------------------>
+<section id="aboutus-client">
+    <div class="au-client">
+        <h2 data-aos="zoom-in">Our Happy Clients</h2>
+        <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(../assets/logo/1.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/2.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/7.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/8.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/9.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/6.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/3.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/5.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/4.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/10.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/11.png);"></div>
+      <div class="swiper-slide" style="background-image: url(../assets/logo/12.png);"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<div class="au-profile">
+  <button data-aos="flip-down"><a href="../pdf/GH_Profile_26May2020.pdf">Download Our Company Profile</a></button>
+</div>
+
+<!------------------ xxx ------------------>
+
+<script>
+  AOS.init({
+        duration: 1000,
+      });
+
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      }
+    });
+</script>
+
+</body>
+</html>

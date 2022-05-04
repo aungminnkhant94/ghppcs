@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Playfair+Display+SC:wght@700&display=swap');
+
+
+p{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+#contact-banner{
+    width: 100%;
+    height: 50vh;
+}
+#contact-banner .contact-wrapper .gh{
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 20vh;
+    color: #555;
+}
+#contact-banner .contact-wrapper .ppcs{
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: right;
+    color: #555;
+}
+#contact-banner .contact-wrapper .line{
+    content: '';
+    width: 100%;
+    height: 8px;
+    display: block;
+}
+#contact-banner .line .progress-value {
+    transition: 0.3s all linear;
+    height: 16px;
+    display: block;
+}
+#contact-banner .progress-value.black {
+    background-color: #111111;
+    animation: progress-5 3s ease-in-out forwards;
+    -webkit-animation: progress-5 3s ease-in-out forwards;
+}
+@keyframes progress-5 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+#ct-main{
+    width: 100%;
+}
+#ct-main .ct-wrapper{
+    width: 100%;
+    position: relative;
+}
+#ct-main .ct-wrapper:before{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100px;
+    background: #000;
+    position: absolute;
+    left: 25%;
+    bottom: -50px;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: .25;
+    z-index: -1;
+}
+#ct-main .ct-wrapper .container{
+    width: 100%;
+    background: #ddd;
+    border-radius: 50px 50px 0 0;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    transition: .5s;
+}
+#ct-main .ct-wrapper .ct-head h4{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    color: #555;
+
+}
+#ct-main .ct-wrapper .ct-head p{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+    color: #555;
+
+}
+#ct-main .ct-wrapper .ct-icon ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#ct-main .ct-wrapper .ct-icon ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 50px;
+}
+#ct-main .ct-wrapper .ct-icon .ct-icon-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ct-main .ct-wrapper .ct-icon .ct-icon-inner i{
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+#ct-main .ct-wrapper .ct-icon .ct-icon-inner span{
+    font-size: 1em;
+}
+#ct-main .ct-wrapper .ct-footer{
+    text-align: center;
+}
+#ct-main .ct-wrapper .ct-footer #contact-form{
+    margin-top: 100px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+#contact-form .tp,
+#contact-form .md{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+#contact-form .form-item{
+    width: 40%;
+    position: relative;
+}
+#contact-form .form-item.text{
+    width: 90%;
+    left: 5%;
+}
+#contact-form .form-item select{
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    background-image: none;
+    box-shadow:none;
+    cursor:pointer;
+}
+#contact-form .form-item select::-ms-expand {
+    display: none;
+ }
+#contact-form .form-item.select {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+#contact-form .form-item.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    transition:.25s all ease;
+ }
+#contact-form .form-item.select:hover::after {
+    color: #2d99fe;
+ }
+#contact-form .form-item select option{
+    background: #ddd;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+#contact-form .form-item span{
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    pointer-events: none;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    transition: .2s;
+    opacity: .5;
+}
+#contact-form .form-item .form-input:focus ~ span,
+#contact-form .form-item .form-input:focus ~ span,
+#contact-form .form-item .form-input:valid ~ span,
+#contact-form .form-item .form-input:valid ~ span{
+    transform: translateY(-20px);
+    opacity: 1;
+    color: #2d99fe;
+}
+#contact-form .form-item .form-input{
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: all .2s;
+}
+#contact-form .form-item textarea{
+    height: 100px;
+    max-height: 200px;
+    min-height: 100px;
+}
+#contact-form .form-item .form-input[type="submit"]:focus{
+    background: #fff;
+    border: none;
+}
+
+#ct-main .ct-footer .btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    outline: none;
+    background-image: linear-gradient(to left,#0652DD,#12CBC4);
+    background-size: 200%;
+    transition: 0.6s;
+}
+#ct-main .ct-wrapper .ct-footer button:hover{
+    background-position: right;
+}
+
+

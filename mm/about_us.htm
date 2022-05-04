@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Services Co.,ltd</title>
+    <meta name="keywords" content="Cleaning Service, Disinfection, Pest Control">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/png" href="assets/ghlogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <!---------SCRIPT CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/aos.js"></script>
+<script src="../js/nav.js"></script>
+        <!---------Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+     <!-- Clients Logo CSS -->
+    <style>
+div.gallery {
+  margin: 15px;
+  border: 0px solid #ccc;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 0px solid #777;
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <nav id="nav-bar"><!------navigation----------->
+    <div class="nav-wrapper" id="mobile-nav">
+      <div class="logo-area">
+        <a href="https://ghppcs.com"><img class="gh-logo" src="../assets/ghlogo.png" alt=""></a>
+        <img class="ppcs-logo" src="../assets/ppcslogo.png" alt="">
+      </div>
+      <div class="nav-list">
+        <ul class="nav-item">
+            <li class="nav-link"><a href="index.htm"> ပင်မစာမျက်နှာ </a></li>
+            <li class="nav-link"><a class="now" href="about_us.htm"> ကုမ္ပဏီအကြောင်း </a></li>
+            <li class="nav-link"><a href="service.htm"> ဝန်ဆောင်မှုများ </a></li>
+            <li class="nav-link"><a href="gallery.htm"> မှတ်တမ်းပုံများ </a></li>
+            <li class="nav-link"><a href="contact.htm"> ဆက်သွယ်ရန် </a></li>
+        </ul>
+      </div>
+      <div class="get-quo">
+          <div class="container-box rotated">
+              <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal"> ဈေးနှုန်းစုံစမ်းရန် </button>
+          </div>
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title"> ဈေးနှုန်းစုံစမ်းရန် </h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                          <form role="form" method="post" id="reused_form" action="../mail/getquo.php" >
+                              <p> အောက်ပါဖောင်ကို ဖြည့်၍ ပို့ပေးပါ။ ကျွန်တော်တို့ အမြန်ဆုံး ပြန်ဆက်သွယ်ပေးပါမယ်။ </p>
+                              <div class="form-group">
+                                  <label for="name"> အမည် - </label>
+                                  <input type="text" class="form-control" id="name" name="visitor_name" required maxlength="50">
+                              </div>
+                              <div class="form-group">
+                                  <label for="email"> Email:</label>
+                                  <input type="email" class="form-control" id="email" name="visitor_email" required maxlength="50">
+                              </div>
+                              <div class="form-group">
+                                  <label for="phone"> ဖုန်း - </label>
+                                  <input type="phone" class="form-control" id="phone" name="visitor_phone" required maxlength="50">
+                              </div>
+                              <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs"> ပို့မည် </button>
+                          </form>
+                          <div id="success_message" style="width:100%; height:100%; display:none; "> <h3> အောင်မြင်စွာ စာပို့ပြီးပါပြီ </h3> </div>
+                          <div id="error_message" style="width:100%; height:100%; display:none; "> <h3> အဆင်မပြေပါ </h3> စာပို့ရာတွင် အဆင်မပြေမှု ရှိနေပါသည်။ </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+      <div class="lan-switch">
+        <a href="#"><img class="mm-flag" src="../assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+        <a href="../../about_us.htm"><img class="uk-flag" src="../assets/ukflag.jpg" alt="English" title="English"></a>
+      </div>
+    </div>
+
+  </nav>
+  <div onclick="menu()" class="bar" id="bar">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div> <!------navigation----------->
+<!------------------ xxx ------------------>
+<section id="aboutus">
+    <div class="au-banner">
+        <div class="container">
+          <h1 data-aos="zoom-in" data-aos-delay="500"> နောက်ခံသမိုင်း အကျဉ်း</h1>
+        <p data-aos="flip-up" data-aos-delay="1000"> Golden Hiro Services Co., Ltd., ကို ၂၀၁၆ ခုနှစ်တွင် with Hiro Industry Co., နှင့်အတူပူးပေါင်းကာ စတင်တည်ထောင်ခဲ့သည်။ Hiro Industry Co., Ltd. ကို Japan နိုင်ငံတွင် ၂၀၀၀ ခုနှစ်မှစတင်တည်ထောင်ခဲ့သည်။ Hiro Industry ကုမ္ပဏီ၏ နည်းလမ်း၊စည်းကမ်းများပေါ်တွင် အခြေခံ၍ ၂၀၁၆ ခုနှစ်မှ စတင်ကာ အဆင့်မြင့်သန့်ရှင်းရေး ဝန်ဆောင်မှုများပေးနေခဲ့ပြီး ၂၀၁၉ ခုနှစ်မှ စတင်ကာ Golden Hiro ကုမ္ပဏီမှ ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှုကို စတင်ဆောင်ရွက်ခဲ့သည်။  </p>
+        <p data-aos="flip-up" data-aos-delay="1000"> ၂၀၁၉ ခုနှစ်တွင် စီးပွားရေးအဆောက်အဦအသစ်များ အများအပြားကို သန့်ရှင်းရေး ဝန်ဆောင်မှုပေးနေသော P.P.C.S cleaning service နှင့် ပူးပေါင်းခဲ့သည်။ </p>
+        <p data-aos="flip-up" data-aos-delay="1000"> ကျွနုပ်တို့၏ ဝန်ဆောင်မှု ရယူသူများအတွက် လိုအပ်နေသေးသော ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှုများကို ၂၀၁၉ ခုနှစ်မှစတင်ကာ ကျွမ်းကျင်ပညာရှင်များဖြင့် စတင်ဆောင်ရွက်ခဲ့သည်။ 
+          </p>
+        </div>
+    </div>
+    <div class="au-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <h3 data-aos="fade-right" data-aos-delay="1500">Golden Hiro</h3>
+              <div class="progress-bar"> <span class="progress-value purple" style="width: 85%;"></span> </div> 
+              <div><span data-aos="fade-left" data-aos-delay="2000"><strong> အထပ်မြင့် သန့်ရှင်းရေး ဝန်ဆောင်မှု </strong></span> </div> <br/>
+              <div class="progress-bar"> <span class="progress-value yellow" style="width: 70%;"></span> </div> 
+              <div><span data-aos="fade-left" data-aos-delay="2000"><strong> ပိုးမွှား ကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှု </strong></span></div> <br/>
+               
+          </div>
+          <div class="col-md-6">
+              <h3 data-aos="fade-left" data-aos-delay="1500">PPCS Professional Cleaning Service</h3>
+              <div class="progress-bar"> <span class="progress-value red" style="width: 65%;"></span> </div> 
+              <div><span data-aos="fade-left" data-aos-delay="2000"><strong> သန့်ရှင်းရေး ဝန်ဆောင်မှုများ </strong></span></div> <br/>
+              <div class="progress-bar"> <span class="progress-value green" style="width: 90%;"></span> </div> <div><span data-aos="fade-left" data-aos-delay="2000"><strong> ပိုးသတ်ဆေးဖြန်းခြင်း ဝန်ဆောင်မှုများ </strong></span></div> <br/>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="aboutus-vision">
+  
+    <div class="wrapper center-block">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading active" role="tab" id="headingOne">
+          <h2 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Our Vision
+            </a>
+          </h2>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="container">
+            <div class="panel-body">
+              အထပ်မြင့် သန့်ရှင်းရေး ဝန်ဆောင်မှု၊ ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှုနှင့် ပိုးသတ်ဆေးဖြန်းခြင်း ဝန်ဆောင်မှုများ အပါအဝင် သန့်ရှင်းရေးနှင့် ပါတ်သက်သော ဝန်ဆောင်မှုများ အားလုံးကို တစ်နေရာတည်းတွင် အကုန်ရနိုင်သော ကုမ္ပဏီအဖြစ် ဂုဏ်သတင်းကျော်ဇောကာ မြန်မာနိုင်ငံအနှံ့ ဝန်ဆောင်မှုများပေးရန် အစဉ်တစိုက် ကြိုးပမ်းနေပါသည်။
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><p>&nbsp;&nbsp;</p></div>
+      <div class="panel panel-default" data-aos="fade-up">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h2 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Our Mission
+            </a>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="container">
+            <div class="panel-body">
+              မိမိတို့၏ အရည်အသွေး၊ ဝန်ဆောင်မှု၊ လုပ်အား များကို အစဉ်တစိုက် တိုးတက်အောင်ကြိုးပမ်းနေသည့် အားလျော်စွာ မိမိတို့ထံမှ ဝန်ဆောင်မှုရယူထားသူများ သာမက ၎င်းတို့၏ ဝန်ထမ်းများနှင့် ဧည့်သည်များမှ မျှော်လင့်ထားသည့်အတိုင်း အကောင်းဆုံးရလဒ်များရနိုင်စေရန် အရည်အသွေးမြင့် သန့်ရှင်းရေးဝန်ဆောင်မှု ပေးနိုင်ရမည်ဟု သန္နိဌာန်ချမှတ်ထားသည်။ လူနေမှုဘဝ အရည်အသွေးမြင့်မားစေရန် လိုအပ်သော သန့်ရှင်းရေးနှင့် ပါတ်သက်သည့် အကူအညီနှင့် ပံ့ပိုးမှုများပေးနိုင်ရန်လည်း မိမိတို့၏တာဝန်တစ်ခုအနေနှင့် သတ်မှတ်ထားပါသည်။ လူသားတို့၏ဘဝ သာယာပျော်ရွှင်ရေးအတွက် သန့်ရှင်း၊ လုံခြုံ၍ ကျန်းမာရေးနှင့်ညီညွတ်သော ပါတ်ဝန်းကျင်တစ်ခု လိုအပ်သည်မှာ အသေအချာပင်ဖြစ်ပါသည်။
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+</section>
+<!------------------ xxx ------------------>
+<!--
+<section id="aboutus-client">
+    <div class="au-client">
+        <h2 data-aos="zoom-in">Our Happy Clients</h2>
+        
+        <!-- Swiper -->
+    <!--
+    <div class="swiper-container">
+    <div class="swiper-wrapper"> 
+      <div class="swiper-slide" style="background-image: url(assets/logo/1.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/2.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/7.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/8.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/9.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/6.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/3.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/5.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/4.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/10.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/11.png);"></div>
+      <div class="swiper-slide" style="background-image: url(assets/logo/12.png);"></div>
+      
+    </div> -->
+    <!-- Add Pagination -->
+<!--    <div class="swiper-pagination"></div>
+  </div>
+-->
+<section id="aboutus-client">
+    <div class="au-client">
+        <h2 data-aos="zoom-in"> မိမိတို့၏ ဝန်ဆောင်မှုကို ကျေနပ်နှစ်သက်သည့် ကုမ္ပဏီများ </h2>
+<div class="gallery">
+  <a target="_blank" href="https://www.bmwmyanmar.com/en/index.html">
+    <img src="../images/clientlogo/web_bmw.png" alt="BMW" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.bumrungrad.com/en/yangon">
+    <img src="../images/clientlogo/web_bumrungrad.png" alt="Bumrungrad" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/clientlogo/web_C&A.png">
+    <img src="../images/clientlogo/web_C&A.png" alt="C&A" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.dbschenker.com/mm-en">
+    <img src="../images/clientlogo/web_dbSchenker.png" alt="DB Schenker" width="400" height="400">
+  </a>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://www.deltacapital.com/">
+    <img src="../images/clientlogo/web_deltaCapital.png" alt="Delta Capital" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://icbc.banklocationmaps.com/mm">
+    <img src="../images/clientlogo/web_icbc.png" alt="ICBC" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://isuzu-myanmar.com/">
+    <img src="../images/clientlogo/web_isuzu.png" alt="ISUZU" width="400" height="400">
+  </a>
+</div>
+
+ <!--<div class="gallery">
+  <a target="_blank" href="http://kantharyartelemedicine.com/">
+    <img src="../images/clientlogo/web_kantharyar.png" alt="Kan Thar Yar" width="400" height="400">
+  </a>
+</div>-->
+<div class="gallery">
+  <a target="_blank" href="https://kloudsco.com/locations-myanmar/">
+    <img src="../images/clientlogo/web_Kloud.png" alt="Kloud" width="400" height="400">
+  </a>
+</div>
+
+
+
+ <!--<div class="gallery">
+  <a target="_blank" href="https://mytel.com.mm/">
+    <img src="../images/clientlogo/web_myTel.png" alt="MyTel" width="400" height="400">
+  </a>
+</div> -->
+
+<div class="gallery">
+  <a target="_blank" href="https://www.octagoninternationalservices.com/">
+    <img src="../images/clientlogo/web_octagon.png" alt="Octagon" width="400" height="400">
+  </a>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://www.samsung.com/mm/">
+    <img src="../images/clientlogo/web_samsung.png" alt="Samsung" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://yangonlife.com.mm/en/dircectory/shinhan-bank">
+    <img src="../images/clientlogo/web_shinhan.png" alt="Shinhan" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.shwetaunggroup.com/">
+    <img src="../images/clientlogo/web_shweTaungGroup.png" alt="ShweTaungGroup" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="http://en.soueast-motor.com/">
+    <img src="../images/clientlogo/web_soueast.png" alt="Soueast" width="400" height="400">
+  </a>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://www.samitivejhospitals.com/page/samitivej-international-myanmar-8-mile-clinic">
+    <img src="../images/clientlogo/web_sumitivej.png" alt="Samitivej" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.suzukimyanmar.com/en/showroom-network-en/">
+    <img src="../images/clientlogo/web_suzuki.png" alt="Suzuki" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.unops.org/myanmar">
+    <img src="../images/clientlogo/web_unops.png" alt="unops" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.drivemyanmar.com/directory/listing/nissan-myanmar-1">
+    <img src="../images/clientlogo/web_Volkswagen.png" alt="Volkswagen" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.wongpartnership.com/practices/myanmar">
+    <img src="../images/clientlogo/web_WongPartnership.png" alt="Wong Partnership" width="400" height="400">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.yomabank.com/mm/business">
+    <img src="../images/clientlogo/web_yoma.png" alt="Yoma Bank" width="400" height="400">
+  </a>
+</div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<div class="au-profile">
+  <button data-aos="flip-down"><a href="../pdf/ProfileJan21.pdf" target="_blank"> ကုမ္ပဏီ ပရိုဖိုင် ရယူရန် </a></button>
+</div>
+
+<!------------------ xxx ------------------>
+
+<script>
+  AOS.init({
+        duration: 1000,
+      });
+
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 50,
+        },
+      }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Services Co.,ltd</title>
+    <meta name="keywords" content="Cleaning Service, Disinfection, Pest Control">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/png" href="../assets/ghlogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <!---------SCRIPT CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/aos.js"></script>
+        <!---------Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Circle Animation -->
+    <style>
+        .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+    </style>
+    
+</head>
+<body>
+    <nav id="nav-bar"><!------navigation----------->
+        <div class="nav-wrapper" id="mobile-nav">
+          <div class="logo-area">
+            <a href="https://ghppcs.com"><img class="gh-logo" src="../assets/ghlogo.png" alt=""></a>
+            <img class="ppcs-logo" src="../assets/ppcslogo.png" alt="">
+          </div>
+          <div class="nav-list">
+            <ul class="nav-item">
+                <li class="nav-link"><a href="index.htm"> ပင်မစာမျက်နှာ </a></li>
+                <li class="nav-link"><a href="about_us.htm"> ကုမ္ပဏီအကြောင်း </a></li>
+                <li class="nav-link"><a class="now" href="service.htm"> ဝန်ဆောင်မှုများ </a></li>
+                <li class="nav-link"><a href="gallery.htm"> မှတ်တမ်းပုံများ </a></li>
+                <li class="nav-link"><a href="contact.htm"> ဆက်သွယ်ရန် </a></li>
+            </ul>
+          </div>
+          <div class="get-quo">
+              <div class="container-box rotated">
+                  <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal"> ဈေးနှုန်းစုံစမ်းရန် </button>
+              </div>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h4 class="modal-title"> ဈေးနှုန်းစုံစမ်းရန် </h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                              <form role="form" method="post" id="reused_form" action="../mail/getquo.php">
+                                  <p> အောက်ပါဖောင်ကို ဖြည့်၍ ပို့ပေးပါ။ ကျွန်တော်တို့ အမြန်ဆုံး ပြန်ဆက်သွယ်ပေးပါမယ်။ </p>
+                                  <div class="form-group">
+                                      <label for="name"> အမည် - </label>
+                                      <input type="text" class="form-control" id="name" name="visitor_name" required maxlength="50">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email"> Email:</label>
+                                      <input type="email" class="form-control" id="email" name="visitor_email" required maxlength="50">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phone"> ဖုန်း - </label>
+                                      <input type="phone" class="form-control" id="phone" name="visitor_phone" required maxlength="50">
+                                  </div>
+                                  <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs"> ပို့မည် </button>
+                              </form>
+                              <div id="success_message" style="width:100%; height:100%; display:none; "> <h3> အောင်မြင်စွာ စာပို့ပြီးပါပြီ။ </h3> </div>
+                              <div id="error_message" style="width:100%; height:100%; display:none; "> <h3> အဆင်မပြေပါ </h3> စာပို့ရာတွင် အဆင်မပြေမှုရှိနေပါသည်။ </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+          <div class="lan-switch">
+            <a href="#"><img class="mm-flag" src="../assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+            <a href="../../service.htm"><img class="uk-flag" src="../assets/ukflag.jpg" alt="English" title="English"></a>
+          </div>
+        </div>
+
+      </nav>
+      <div onclick="menu()" class="bar" id="bar">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div> <!------navigation----------->
+<!------------------ xxx ------------------>
+<section id="service-banner">
+    <div class="s-banner">
+        <h1 data-aos="zoom-in"> အဓိက ဝန်ဆောင်မှု လေးမျိုး </h1>
+
+        <div class="row">
+            <div class="content-left col-md-6">
+                <h3 data-aos="fade-right" data-aos-delay="500"> သန့်ရှင်းရေးဝန်ဆောင်မှုများ </h3>
+                <p> ကျွန်တော်တို့၏ ကျွမ်းကျင်ပညာရှင်များသည် နှစ်ပေါင်းများစွာ မြန်မာနိုင်ငံအနှံ့ သန့်ရှင်းရေးလုပ်ငန်းများ ဆောင်ရွက်ခဲ့ဖူးသည့် အတွေ့အကြုံများရှိသောကြောင့် နေရာအလိုက် သန့်ရှင်းရေးလုပ်ငန်းတို့၏ ကွဲပြားခြားနားသော သဘောသဘာဝများကို ကောင်းစွာနားလည်ပြီး ဖြစ်သည်။ ပြည်တွင်းကုန်သွယ်လုပ်ငန်းမှ အစ နိုင်ငံတကာ စီးပွားရေးလုပ်ငန်းများအထိ အရွယ်အစားအမျိုးမျိုးသော စီးပွားရေးလုပ်ငန်းများကို ဝန်ဆောင်မှု ပေးလျက်ရှိပါသည်။ ကျွန်တော်တို့၏ သပ်ရပ်ကောင်းမွန်သော အရည်အသွေးမြင့် ဝန်ဆောင်မှုများ စာရင်းတွင် - </p>
+                <div  data-aos="flip-down" data-aos-delay="1000">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-clean"> ဆက်ဖတ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190"> ခေါ်ဆိုရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm"> ဆက်သွယ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#cl-ns"> ကြည့်ရှုရန် </a></button>
+                </div>
+            </div>
+            <div class="content-left col-md-6">
+                <div class="s-img" style="background-image: url(../images/h1.png);">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-right col-md-6">
+                <div class="s-img" style="background-image: url(../images/Highrise08.jpg);">
+                </div>
+            </div>
+            <div class="content-right col-md-6">
+                <h3 data-aos="fade-left" data-aos-delay="200"> အထပ်မြင့် သန့်ရှင်းရေး ဝန်ဆောင်မှုများ </h3>
+                <p> အထပ်မြင့် အဆောက်အဦ အမျိုးမျိုးတွင် ကြိုးကိုအသုံးပြု၍ အန္တရာယ်ကင်းစွာ သန့်ရှင်းရေး ဆောင်ရွက်ပေးနိုင်ပါသည်။ အထပ်မြင့် အဆောက်အဦသန့်ရှင်းရေးသည် အန္တရာယ်ကင်းရှင်းရေး အဆင့်မီသော နည်းလမ်းများကို တိကျစွာလိုက်နာဆောင်ရွက်ရပြီး ပေါ့ဆ၍ မရပေ။ သင့်လျော်သော လေ့ကျင့်သင်ကြားမှု၊ ဗဟုသုတ၊ အတွေ့အကြုံ တို့သည် အထပ်မြင့်ဝန်ဆောင်မှုများအတွက် အဓိကလိုအပ်ချက်များဖြစ်ပေသည်။ အန္တရာယ် ကင်းရှင်းစွာ လုပ်ငန်းများ ဆောင်ရွက်နိုင်ရေးအတွက် ကျွန်တော်တို့၏ ကျွမ်းကျင်ဝန်ထမ်းများအား နိုင်ငံတကာ ကြိုးဆင်းကြိုးတက်လုပ်ငန်း အဖွဲ့အစည်း (IRATA) မှ သင်ကြားသော သင်တန်းများကို တက်ရောက်စေခဲ့သည်။ IRATA မှ ပေးအပ်သော အဆင့် ၁၊ ၂ နှင့် ၃ လက်မှတ်ရ ကျွမ်းကျင်ဝန်ထမ်းများဖြင့် ဝန်ဆောင်မှု ပေးနေခြင်း ဖြစ်ပါသည်။
+                </p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-high"> ဆက်ဖတ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190"> ခေါ်ဆိုရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm"> ဆက်သွယ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#hg-ns"> ကြည့်ရှုရန် </a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content-left col-md-6">
+                <h3 data-aos="fade-right"> ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှု </h3>
+                <p><font color=red><b>လူနေပါတ်ဝန်းကျင်တွင် ပိုးမွှားကာကွယ်နှိမ်နင်းရေး </b></font><br>
+                    • တွားသွားနှင့် ပျံသန်းတတ်သော အင်းဆက်များ <br>
+                    • ချ (အထူး) တားဆီးနှိမ်နင်းရေး ဝန်ဆောင်မှု <br>
+                    • ကြွက်နှင့် အခြားပိုးမွှားများ <br><br />
+                    <font color=red><b> စီးပွားရေး လုပ်ငန်းသုံး ပိုးမွှားကာကွယ်နှိမ်နင်းရေး </b></font>
+                    • စားသောက်ကုန်လုပ်ငန်းများအတွက် ပိုးမွှားကာကွယ်နှိမ်နင်းရေး အထူးဝန်ဆောင်မှု (စားသောက်ဆိုင်များနှင့် ကုန်စုံဆိုင်များ  အစရှိသည်ဖြင့် ....) <br>
+                    • စက်ရုံများနှင့်  ဂိုထောင်များအတွက် ပိုးမွှား ကာကွယ်နှိမ်နင်းရေး အထူး ဝန်ဆောင်မှု <br>
+                    • ဆောက်လုပ်ရေးလုပ်ငန်းအကြို ပိုးမွှားကာကွယ်နှိမ်နင်းရေး (မြေသားတွင်းပိုးမွှားများ နှိမ်နင်းသန့်ရှင်ရေး စသည်ကဲ့သို့ .....)</p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-pest"> ဆက်ဖတ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+959765418274"> ခေါ်ဆိုရန် </a></i></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"><a href="contact.htm"> ဆက်သွယ်ရန် </a></i></button>
+                    <button class="btn-4"><i class="fa fa-picture-o" aria-hidden="true"><a href="gallery.htm#pc-ns"> ကြည့်ရှုရန် </a></i></button>
+                </div>
+
+            </div>
+            <div class="content-left col-md-6">
+                <div class="s-img" style="background-image: url(../images/Pestcontrol02.jpg);">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content-right col-md-6">
+                <div class="s-img" style="background-image: url(../images/d7.png);">
+                </div>
+            </div>
+            <div class="content-right col-md-6">
+                <h3 data-aos="fade-left"> ပိုးသတ်ဆေးဖြန်းခြင်း ဝန်ဆောင်မှု </h3>
+                <p> သန့်ရှင်းရေး ကျွမ်းကျင်ပညာရှင်များ ဖြစ်သည့်အားလျော်စွာ မိမိတို့ဝန်ဆောင်မှု ပေးနေသူများအတွက် မည်သည့်နေရာများတွင် ပိုးသတ်ဆေးဖြန်းရန် လိုအပ်သည်၊ မည်သည့်နေရာတွင် Deep Cleaning လိုအပ်သည်တို့ကို PPCS မှဆန်းစစ်ပေးနေမြဲဖြစ်ပါသည်။ ကျွန်တော်တို့သည် မိမိတို့ထံမှ ဝန်ဆောင်မှု ရယူထားသူတို့၏ လိုအပ်ချက်နှင့် အခြေအနေပေါ်မူတည်၍ အသင့်လျော်ဆုံး ဝန်ဆောင်မှု ပေးနိုင်ရန် အစဉ်အလေးပေး ဆောင်ရွက်လျက် ရှိပါသည်။ ဒေသအစိုးရမှ ချမှတ်ထားသော စည်းကမ်းသတ်မှတ်ချက်များကိုလည်း လိုက်နာကာ ဆောင်ရွက်နေခြင်းဖြစ်ပါသည်။ ထိတွေ့မှုများသော နေရာများတွင် ပိုးသတ်ဆေး အကြိမ်ရေများများ ဖြန်းခြင်း၊ ပိုက်စိပ်တိုက်သန့်ရှင်းရေး တို့ကိုလည်း ဆောင်ရွက်ပေးနေပါသည်။ <br /> သန့်ရှင်းရေး ဆောင်ရွက်ရမည့် လိုအပ်ချက်ပေါ်မူတည်၍ မည်ကဲ့သို့ အန္တရာယ်ကင်းစွာ ဆောင်ရွက်ရမည်ကို မိမိတို့ ဝန်ဆောင်မှုပေးနေသူများအား အကြံပေးခြင်းများ၊ ကိုရိုနာ ဗိုင်းရပ်ကူးစက်မှု လက္ခဏာများ ရှိလာပါကလည်း ကျန်းမာရေးနှင့် ညီညွတ်သော သန့်ရှင်းရေး အကြံပေးချက်များကို လိုက်နာရန်တိုက်တွန်းခြင်းတို့ကို ဆောင်ရွက်လျက်ရှိပါသည်။
+                   </p>
+                <div data-aos="flip-down">
+                    <button class="btn-1"><i class="fa fa-eye" aria-hidden="true"></i><a href="#service-dis"> ဆက်ဖတ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+959765418190"> ခေါ်ဆိုရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="contact.htm"> ဆက်သွယ်ရန် </a></button>
+                    <button class="btn-2"><i class="fa fa-picture-o" aria-hidden="true"></i><a href="gallery.htm#ds-ns"> ကြည့်ရှုရန် </a></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-clean">
+    <div class="clean-wrapper">
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+        <h3 data-aos="zoom-in"> သန့်ရှင်းရေးဝန်ဆောင်မှုများ </h3>
+        <div class="clean-wrapper-inner container">
+            <h4> စီးပွားရေးလုပ်ငန်းများ သန့်ရှင်းရေး </h4>
+            <p>  ကျွန်တော်တို့၏ ကျွမ်းကျင်ပညာရှင်များသည် နှစ်ပေါင်းများစွာ မြန်မာနိုင်ငံအနှံ့ သန့်ရှင်းရေးလုပ်ငန်းများ ဆောင်ရွက်ခဲ့ဖူးသည့် အတွေ့အကြုံများရှိသောကြောင့် နေရာအလိုက် သန့်ရှင်းရေးလုပ်ငန်းတို့၏ ကွဲပြားခြားနားသော သဘောသဘာဝများကို ကောင်းစွာနားလည်ပြီး ဖြစ်သည်။ ပြည်တွင်းကုန်သွယ်လုပ်ငန်းမှ အစ နိုင်ငံတကာ စီးပွားရေးလုပ်ငန်းများအထိ အရွယ်အစားအမျိုးမျိုးသော စီးပွားရေးလုပ်ငန်းများကို ဝန်ဆောင်မှု ပေးလျက်ရှိပါသည်။ ကျွန်တော်တို့၏ သပ်ရပ်ကောင်းမွန်သော အရည်အသွေးမြင့် ဝန်ဆောင်မှုများ စာရင်းတွင် -
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i> ရုံး သန့်ရှင်းရေး </h5>
+                                <p> သန့်ရှင်းသပ်ရပ်၍ ကျန်းမာရေးနှင့် ညီညွတ်သော ပါတ်ဝန်းကျင်ရှိသည့် ရုံးခန်းတစ်ခုသည် လုပ်ငန်းဆောင်ရွက်ချက်များ တိုးတက်ကောင်းမွန်စေရုံသာမက ၎င်းကုမ္ပဏီသည် ဆောင်ရွက်သမျှသော အမှုကိစ္စတိုင်းကို ကျွမ်းကျင်လိမ္မာစွာ ဆောင်ရွက်နိုင်သည်ဟု အမြင်သက်ရောက်စေနိုင်သည်။
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>အခမ်းအနားပွဲ သန့်ရှင်းရေး</h5>
+                                <p> တစ်ခန်းတည်းတွင် ကျင်းပသော အစည်းအဝေးတွေ့ဆုံပွဲမှ အစ လူစုလူဝေးဖြင့်ကျင်းပသော တွေ့ဆုံပွဲများအထိ ပွဲမစမီ၊ ပွဲကျင်းပနေစဉ်နှင့် ပွဲအပြီး အဆင့်တိုင်းတွင် သန့်ရှင်းနေစေရန် ကျွန်တော်တို့ PPCS မှ တာဝန်ယူပေးနိုင်ပါသည်။
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Pubs နှင့်စားသောက်ဆိုင် သန့်ရှင်းရေး</h5>
+                                <p>Pubs နှင့် စားသောက်ဆိုင်များသည် ကျန်းမာရေးနှင့် အန္တရာယ်ကင်းရှင်းရေးတို့အတွက် ပုံမှန်စစ်ဆေးနေရန် လိုအပ်သည့် အားလျော်စွာ လူကြီးမင်းတို့၏ စီးပွားရေးလုပ်ငန်း ဆိုင်ပရဝုဏ်အတွင်း ကျန်းမာရေးနှင့် ညီညွတ်သော အဆင့်အတန်းမီ သန့်ရှင်းရေးရှိနေစေရန် ကျွန်တော်တို့ PPCS မှ တာဝန်ယူဆောင်ရွက်ပေးပါသည်။
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>အားကစားနှင့် နားနေဆောင်သန့်ရှင်းရေး</h5>
+                                <p>လူကြီးမင်းတို့၏ အားကစားခန်းမနှင့် နားနေဆောင်သို့ လာရောက်အသုံးပြုသူများအတွက် ကျန်းမာရေးနှင့် ညီညွတ်သော သန့်ရှင်းမှုရှိနေစေရန် အားကစားပစ္စည်းနှင့် အခြားအသုံးအဆောင်များ သန့်ရှင်းနေစေရန် ကျွန်တော်တို့ PPCS မှ ကူညီပေးပါသည်။
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>ငှားရမ်းရွှေ့ပြောင်း သန့်ရှင်းရေး</h5>
+                                <p>အဆောက်အဦးတစ်ခု ငှားရမ်းမှုပြီးဆုံးချိန်တွင် နောက်လာမည့် ငှားရမ်းသူအသစ်အတွက် အသစ်ကဲ့သို့ သန့်ရှင်းတောက်ပြောင်နေသော အဆောက်အဦဖြစ်နေစေရန် ကျွန်တော်တို့ PPCS မှ ကူညီပေးပါသည်။
+                                </p>
+                            </li>
+                            <li data-aos="fade-up">
+                                <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>လေဝင်လေထွက် ပိုက်လိုင်းသန့်ရှင်းရေး</h5>
+                                <p>လေဝင်လေထွက် ပိုက်လိုင်း အသုံးပြုထားသော စီးပွားရေးလုပ်ငန်း အဆောက်အဦများတွင် နေထိုင်သူများ၏ ကျန်းမာရေးမထိခိုက်စေရန် လေပိုက်လိုင်းအတွင်း ဖုန်မှုန့်၊ အမှိုက်နှင့် အခြား အညစ်အကြေးများ ကင်းရှင်းစေရေး အမြဲဂရုစိုက် သန့်ရှင်းပေးရန်လိုအပ်ပါသည်။ လေဝင်လေထွက် ပိုက်လိုင်းသန့်ရှင်းရေးအတွက် ကျွန်တော်တို့ကို ယုံကြည်စိတ်ချစွာ တာဝန်ပေးနိုင်ပါတယ်။
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            ကြမ်းခင်းသန့်ရှင်းရေး ဝန်ဆောင်မှုများကိုလည်း ကျွမ်းကျင်ပညာရှင်များဖြင့် ဝန်ဆောင်မှု ပေးလျက်ရှိပါတယ်... <br><br>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>စက်ဖြင့် ကြမ်းတိုက်ခြင်း</h5>
+                    <p>ရုံးခန်းများ၊ လုပ်ငန်းများ၏ ကြမ်းပြင်များသည် လူသွားလာမှု များပြားခြင်းကြောင့် အညစ်အကြေးများ အလွယ်တကူ စွန်းပေလေ့ရှိပါသည်။ ၎င်းအညစ်အကြေးများဖယ်ရှားပြီး သန့်စင်တောက်ပသော နဂိုကြမ်းခင်း ပြန်ရအောင် ကျွန်တော်တို့ ကူညီပေးနိုင်ပါတယ်။
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>ကြမ်းခင်းဂျေးချွတ်ခြင်း၊ ဖယောင်းအုပ်ခြင်းနှင့် အရောင်တင်ခြင်း</h5>
+                    <p>ကျွန်တော်တို့ရဲ့ ကျွမ်းကျင်ပညာရှင်တွေက လူကြီဂမင်းတို့ရဲ့ ကြမ်းပြင်တွေကို ပြန်လည်တောက်ပလာအောင် ကူညီပေးနိုင်ပါတယ်။
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i> အချောသတ် အကြည်လွှာအုပ်ခြင်း </h5>
+                    <p> လူကြီးမင်းတို့၏ ညစ်ပတ်နေသော ကွန်ကရိကြမ်းခင်းများကို အသစ်လိုပြန်လည်တောက်ပလာစေရန် ကြာရှည်ခံ အချောသတ်အကြည်လွှာဖုံးအုပ်ခြင်းကို မိမိတို့ဝန်ဆောင်မှုပေးနိုင်ပါသည်။ 
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Concrete floor sealing</h5>
+                    <p>Regular resealing extends the lifespan of your concrete flooring. We’ll keep it in top shape.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Tile and grout cleaning</h5>
+                    <p>Dingy grout makes even a clean building look—well, dingy. We can get that for you.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Carpet steam cleaning</h5>
+                    <p>Got carpets too? We’ll deep clean them while we’re at it.
+                    </p>
+                </li>
+                <li data-aos="fade-up">
+                    <h5><i class="fa fa-chevron-right" aria-hidden="true"></i>Vinyl floor reconditioning</h5>
+                    <p>Worn Vinyl floors get a new life with our reconditioning method.
+                    </p>
+                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-high">
+    <div class="high-wrapper">
+        <h3 data-aos="zoom-in"> အထပ်မြင့် ဝန်ဆောင်မှုများ </h3>
+        <div class="high-wrapper-inner container">
+            <p>Through the use of rope access, we can safely access a wide variety of different commercial high rise applications. Commercial high rise access requires strict adherence to safety standards and should not be taken lightly. Proper training, knowledge, and experience are a core value at High Altitude Services. To get the job done safely, we had our service technicians trained properly by International Rope Access Trade Association, IRATA. Our technicians have Level 1, 2 and 3 certificates from IRATA.
+            </p>
+            <h4 data-aos="fade-right">Service Range <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h4>
+            <div class="service-range-inner">
+                <div class="row">
+                    <div class="one col-md-4">
+                        <img src="../images/Highrise09.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise Cleaning</p>
+                    </div>
+                    <div class="two col-md-4">
+                        <img src="../images/Highrise10.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise repair <br>and Installation</p>
+                    </div>
+                    <div class="three col-md-4">
+                        <img src="../images/Highrise11.jpg" alt="">
+                        <p data-aos="flip-down" data-aos-delay="500">High-rise Painting</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-pest">
+    <div class="layer-2">
+        <img src="assets/layer2.png" alt="">
+    </div>
+    <div class="pest-wrapper">
+        <h3 data-aos="zoom-in">Pest Control Services</h3>
+        <div class="pest-wrapper-inner container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 data-aos="fade-right"><i class="fa fa-chevron-right" aria-hidden="true"></i>Residential Pest Control</h4>
+                    <ul>
+                        <li>- Crawling and Flying Insects</li>
+                        <li>- Special Termite Protection Service </li>
+                        <li>- Rodents and Others</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 data-aos="fade-right"><i class="fa fa-chevron-right" aria-hidden="true"></i>Commercial Pest Control </h4>
+                    <ul>
+                        <li>- Special Pest protection for Food Services (Restaurants, Food Stores etc.) </li>
+                        <li>- Pest Control for Factories & Warehouses</li>
+                        <li>- Preconstruction Pest Control (Soil treatment etc.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ipm-step">
+            <h4 data-aos="fade-in">Integrated Pest Management (IPM) - 5 Steps</h4>
+            <div class="ipm-circle" data-aos="fade-in" data-aos-delay="500">
+                <img src="../assets/ipm-circle.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service-dis">
+    <div class="dis-wrapper container">
+        <h3 data-aos="zoom-in">Disinfection Services</h3>
+        <div class="dis-wrapper-inner" data-aos="fade-in" data-aos-delay="500">
+            <p>As the cleaning experts, PPCS works closely with customers to understand which areas require disinfection and deep cleaning. Our focus is on establishing the cleaning solutions and methodology depending on our customers’ needs and severity level – we will work closely with you to ensure we provide the solutions that adhere to guidelines established by local authorities. We also offer high-frequency cleaning to disinfect high-touch or high-footfall areas and deep cleaning. Depending on the severity levels, we advise customers on how to minimise risks through step-up (High frequency) cleaning. We continually keep our customers informed and aware of good hand hygiene habits, social distancing and advising in case of symptoms for the virus.</p>
+        </div>
+
+        <div class="dis-img-wrapper">
+
+            <div class="column" data-aos="flip-up" data-aos-delay="200">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>Myanmar Plaza</p>
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="1000">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>MM Plaza</p>
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="1200">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>MM Plaza</p>
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="400">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>EY UTW Advisory Limited </p>
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="600">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>Sumitivej International</p>
+                </div>
+            </div>
+            <div class="column" data-aos="flip-up" data-aos-delay="800">
+                <img src="images/mmplaza.jpg" alt="">
+                <div class="show-hide">
+                    <p>Disinfection at<br>UBC Tower</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="last-text">
+            <p>PPCS delivers fast response and an extensive range of expert disinfection services for businesses across Yangon to ensure potentially harmful and hazardous situations are dealt with in a safe, discreet and legally compliant manner.
+                Our professional specialist disinfection services provide reassurance to businesses that could be affected by potentially hazardous situations by eradicating harmful pathogens quickly and safely. Our methods of disinfection provide an essential resource for many authorities and commercial organisations because they help protect your business against infectious bacteria, viruses and disease.
+            <br><br>
+            Prevention is the best medicine. Safe, healthy workers and customers mean a healthier bottom line to your business.
+            For example, a thoroughly cleaned and disinfected facility means improved profitability through:
+            80% reduced probability of catching a cold or flu 62% reduction in contaminated surfaces 46% reduction in absenteeism
+            </p>
+        </div>
+    </div>
+</section>
+<!------------------ xxx ------------------>
+<footer id="footer">
+    <button><a href="#nav-bar"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></button>
+    <div class="footer-wrapper">
+        <h6>copyright © 2020 <span>Golden Hiro Services Co.,ltd</span> | All right reserved.</h6>
+        <p>powered by <a href="http://smsdigitalagency.com/" target="_">smsdigitalagency</a></p>
+    </div>
+</footer>
+<!------------------ xxx ------------------>
+
+
+<script>
+    AOS.init({
+        duration: 1000,
+      });
+
+    function menu() {
+    var x = document.getElementById("mobile-nav");
+      if (x.className === "nav-wrapper") {
+        x.className += "responsive";
+      } else {
+        x.className = "nav-wrapper";
+      }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hiro Services Co.,ltd</title>
+    <meta name="keywords" content="Cleaning Service, Disinfection, Pest Control">
+    <meta name="description" content="The Best Cleaning Service In Myanmar.">
+    <link rel="shortcut icon" type="image/png" href="assets/ghlogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <!---------SCRIPT CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+        <!---------Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+
+    <nav id="nav-bar"><!------navigation----------->
+      <div class="nav-wrapper" id="mobile-nav">
+        <div class="logo-area">
+          <a href="https://ghppcs.com"><img class="gh-logo" src="../assets/ghlogo.png" alt=""></a>
+          <img class="ppcs-logo" src="../assets/ppcslogo.png" alt="">
+        </div>
+        <div class="nav-list">
+          <ul class="nav-item">
+              <li class="nav-link"><a class="now" href="index.htm"> ပင်မစာမျက်နှာ </a></li>
+              <li class="nav-link"><a href="about_us.htm"> ကုမ္ပဏီအကြောင်း </a></li>
+              <li class="nav-link"><a href="service.htm"> ဝန်ဆောင်မှုများ </a></li>
+              <li class="nav-link"><a href="gallery.htm"> မှတ်တမ်းပုံများ </a></li>
+              <li class="nav-link"><a href="contact.htm"> ဆက်သွယ်ရန် </a></li>
+          </ul>
+        </div>
+        <div class="get-quo">
+            <div class="container-box rotated">
+                <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal"> ဈေးနှုန်းစုံစမ်းရန် </button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"> ဈေးနှုန်းစုံစမ်းရန် </h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" action="../mail/getquo.php" >
+                                <p> အောက်ပါဖောင်ကို ဖြည့်၍ ပို့ပေးပါ။ ကျွန်တော်တို့ အမြန်ဆုံး ပြန်ဆက်သွယ်ပေးပါမယ်။ </p>
+                                <div class="form-group">
+                                    <label for="name"> အမည် - </label>
+                                    <input type="text" class="form-control" id="name" name="visitor_name" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"> Email - </label>
+                                    <input type="email" class="form-control" id="email" name="visitor_email" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone"> ဖုန်း - </label>
+                                    <input type="phone" class="form-control" id="phone" name="visitor_phone" required maxlength="50">
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs"> ပို့မည် </button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3> အောင်မြင်စွာ စာပို့ပြီးပါပြီ။ </h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3> အဆင်မပြေပါ </h3> စာပို့ရာတွင် အဆင်မပြေမှုရှိနေပါသည်။ </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+        <div class="lan-switch">
+          <a href="index.htm"><img class="mm-flag" src="../assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+          <a href="../../index.htm"><img class="uk-flag" src="../assets/ukflag.jpg" alt="English" title="English"></a>
+        </div>
+      </div>
+
+    </nav>
+    <div onclick="menu()" class="bar" id="bar">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div> <!------navigation----------->
+
+<!------------------ xxx ------------------>
+<section id="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(../assets/banner-1.jpg)"></div>
+       <!--<div class="swiper-slide" style="background-image: url(../assets/banner-2.jpg)"></div>-->
+        <div class="swiper-slide" style="background-image: url(../assets/banner-3.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+</div>
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1406.09 190.97"><defs><style>.cls-1{fill:rgb(235, 236, 236);}</style></defs><path class="cls-1" d="M0,273S413.13,16.75,619.38,169.88s532.81,58.59,532.81,58.59l253.9-68V308.16L0,312.06Z" transform="translate(0 -121.09)"/></svg>
+</section>
+<!------------------ xxx ------------------>
+<section id="about-us">
+  <div class="about-wrapper">
+    <h1 data-aos="zoom-in"> ကုမ္ပဏီအကြောင်း </h1>
+    <p>Golden Hiro Services Co., Ltd., ကို ၂၀၁၆ ခုနှစ်တွင် with Hiro Industry Co., နှင့်အတူပူးပေါင်းကာ စတင်တည်ထောင်ခဲ့သည်။ Hiro Industry Co., Ltd. ကို Japan နိုင်ငံတွင် ၂၀၀၀ ခုနှစ်မှစတင်တည်ထောင်ခဲ့သည်။ Hiro Industry ကုမ္ပဏီ၏ နည်းလမ်း၊စည်းကမ်းများပေါ်တွင် အခြေခံ၍ ၂၀၁၆ ခုနှစ်မှ စတင်ကာ အဆင့်မြင့်သန့်ရှင်းရေး ဝန်ဆောင်မှုများပေးနေခဲ့ပြီး ၂၀၁၉ ခုနှစ်မှ စတင်ကာ Golden Hiro ကုမ္ပဏီမှ ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှုကို စတင်ဆောင်ရွက်ခဲ့သည်။ 
+      <br>
+      ၂၀၁၉ ခုနှစ်တွင် စီးပွားရေးအဆောက်အဦအသစ်များ အများအပြားကို သန့်ရှင်းရေး ဝန်ဆောင်မှုပေးနေသော P.P.C.S cleaning service နှင့် ပူးပေါင်းခဲ့သည်။
+      <br>
+      ကျွနုပ်တို့၏ ဝန်ဆောင်မှု ရယူသူများအတွက် လိုအပ်နေသေးသော ပိုးမွှားကာကွယ်နှိမ်နင်းရေး ဝန်ဆောင်မှုများကို ၂၀၁၉ ခုနှစ်မှစတင်ကာ ကျွမ်းကျင်ပညာရှင်များဖြင့် စတင်ဆောင်ရွက်ခဲ့သည်။</p>
+      <div data-aos="fade-up">
+        <a href="about_us.htm">ဆက်လက်ကြည့်ရှုရန်</a>
+      </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="service">
+  <div class="service-wrapper">
+    <h1 data-aos="zoom-in" data-aos-delay="500">ဝန်ဆောင်မှုများ</h1>
+    <div class="container">
+      <div class="row">
+        <div class="service-card col-md-3">
+          <img src="../assets/service_cl.png" alt="cleaning service">
+          <h3> သန့်ရှင်းရေး <br> ဝန်ဆောင်မှုများ </h3>
+          <div class="service-inner" data-aos="fade-left" data-aos-delay="1000">
+            <p>• <font color=red><b> အခမ်းအနား သန့်ရှင်းရေး </b></font> အစည်းအဝေးခန်းမမှ အစပြု၍ ပြင်ပလူစုလူဝေး အခမ်းအနားများအထိ ကျွန်တော်တို့ ကုမ္ပဏီမှ ပွဲမစတင်မီ၊ ပွဲကျင်းပနေစဉ်၊ ပွဲအပြီး သန့်ရှင်းရေးများကို ဆောင်ရွက်ပေးလျက်ရှိပါသည်။ အခမ်းအနားကျင်းပနေစဉ်မှ ပြီးဆုံးသည်အထိ ကျင်းပရာနေရာသည် သစ်လွင်တောက်ပနေစေရန် ကျွန်တော်တို့ တာဝန်ယူနိုင်ပါသည်။
+              <br>
+              • <font color=red><b> စားသောက်ဆိုင် သန့်ရှင်းရေး </b></font> စားသောက်ဆိုင်များသည် ကျန်းမာရေးနှင့် ညီညွတ်စေရန် သန့်ရှင်းရေးကို ပုံမှန်
+            </p>
+          </div>
+          <div data-aos="fade-up">
+            <a href="service.htm#service-clean"> ဆက်လက်ကြည့်ရှုရန် </a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-hg.png" alt="High-rise Access service">
+          <h3> အထပ်မြင့်သန့်ရှင်းရေး <br> ဝန်ဆောင်မှုများ </h3>
+          <div class="service-inner" data-aos="zoom-in" data-aos-delay="1000">
+            <p> အထပ်မြင့် အဆောက်အဦ အမျိုးမျိုးတွင် ကြိုးကိုအသုံးပြု၍ အန္တရာယ်ကင်းစွာ သန့်ရှင်းရေး ဆောင်ရွက်ပေးနိုင်ပါသည်။ အထပ်မြင့် အဆောက်အဦသန့်ရှင်းရေးသည် အန္တရာယ်ကင်းရှင်းရေး အဆင့်မီသော နည်းလမ်းများကို တိကျစွာလိုက်နာဆောင်ရွက်ရပြီး ပေါ့ဆ၍ မရပေ။ သင့်လျော်သော လေ့ကျင့်သင်ကြားမှု၊ ဗဟုသုတ၊ အတွေ့အကြုံ တို့သည် အထပ်မြင့်ဝန်ဆောင်မှုများအတွက် အဓိကလိုအပ်ချက်များဖြစ်ပေသည်။
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service.htm#service-high">ဆက်လက်ကြည့်ရှုရန်</a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-pest.png" alt="Pest Control service">
+          <h3> ပိုးမွှားကာကွယ်နှိမ်နင်းရေး <br> ဝန်ဆောင်မှု </h3>
+          <div class="service-inner" data-aos="zoom-in" data-aos-delay="1000">
+            <p><font color=red><b> လူနေပါတ်ဝန်းကျင်တွင် ပိုးမွှားကာကွယ်နှိမ်နင်းရေး </b></font> 
+              <br>• တွားသွားနှင့် ပျံသန်းတတ်သော အင်းဆက်များ  
+              <br>• ချ (အထူး) တားဆီးနှိမ်နင်းရေး ဝန်ဆောင်မှု  
+              <br>• ကြွက်နှင့် အခြားပိုးမွှားများ 
+              <br><br>
+              <font color=red><b> စီးပွားရေး လုပ်ငန်းသုံး ပိုးမွှားကာကွယ်နှိမ်နင်းရေး </b></font>
+              <br>• စားသောက်ကုန်လုပ်ငန်းများအတွက် ပိုးမွှားကာကွယ်နှိမ်နင်းရေး အထူးဝန်ဆောင်မှု (စားသောက်ဆိုင်များနှင့် ကုန်စုံဆိုင်များ  အစရှိသည်ဖြင့် ....)
+              <!-- <br>• စက်ရုံများနှင့်  ဂိုထောင်များအတွက် ပိုးမွှား ကာကွယ်နှိမ်နင်းရေး အထူး ဝန်ဆောင်မှု  -->
+              </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service.htm#service-pest"> ဆက်လက်ကြည့်ရှုရန် </a>
+          </div>
+        </div>
+        <div class="service-card col-md-3">
+          <img src="../assets/service-dis.png" alt="disinfection service">
+          <h3> ပိုးသတ်ဆေးဖြန်းခြင်း <br> ဝန်ဆောင်မှု </h3>
+          <div class="service-inner" data-aos="fade-right" data-aos-delay="1000">
+            <p> သန့်ရှင်းရေး ကျွမ်းကျင်ပညာရှင်များ ဖြစ်သည့်အားလျော်စွာ မိမိတို့ဝန်ဆောင်မှု ပေးနေသူများအတွက် မည်သည့်နေရာများတွင် ပိုးသတ်ဆေးဖြန်းရန် လိုအပ်သည်၊ မည်သည့်နေရာတွင် Deep Cleaning လိုအပ်သည်တို့ကို PPCS မှဆန်းစစ်ပေးနေမြဲဖြစ်ပါသည်။ ကျွန်တော်တို့သည် မိမိတို့ထံမှ ဝန်ဆောင်မှု ရယူထားသူတို့၏ လိုအပ်ချက်နှင့် အခြေအနေပေါ်မူတည်၍ အသင့်လျော်ဆုံး ဝန်ဆောင်မှု ပေးနိုင်ရန် အစဉ်အလေးပေးဆောင်ရွက်လျက် ရှိပါသည်။
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="service.htm#service-dis"> ဆက်လက်ကြည့်ရှုရန် </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="gallery">
+  <div class="gallery-wrapper">
+    <h1 data-aos="zoom-in"> မှတ်တမ်းပုံများ </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <figure><a href="gallery.htm#cl-ns"><img src="../images/Coating03.jpg"/></a></figure>
+          <span> သန့်ရှင်းရေး ဝန်ဆောင်မှု မှတ်တမ်းပုံများ </span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery.htm#hg-ns"><img src="../images/Highrise005.jpg"/></a></figure>
+          <span> အထပ်မြင့် သန့်ရှင်းရေး မှတ်တမ်းပုံများ </span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery.htm#pc-ns"><img src="../images/Floor Scrubbing01.jpg"/></a></figure>
+          <span> ပိုးမွှား ကာကွယ်နှိမ်နင်းရေး မှတ်တမ်းပုံများ </span>
+        </div>
+        <div class="col-md-6">
+          <figure><a href="gallery.htm#ds-ns"><img src="../images/Mb03.jpg"/></a></figure>
+          <span> ပိုးသတ်ဆေးဖြန်းခြင်း မှတ်တမ်းပုံများ </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<section id="contact">
+  <div class="contact-wrapper">
+    <div data-aos="zoom-in">
+      <h1> ဆက်သွယ်ရန် </h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="contact-left col-md-6">
+          <h5> အသေးစိတ်အချက်အလက်များ သိရှိနိုင်ရန်အတွက် ဆက်သွယ်လိုက်ပါနော် </h5>
+          <div class="row">
+            <div class="col-md-3">
+              <p data-aos="fade-right" data-aos-delay="1200"><i class="fa fa-building" aria-hidden="true"></i> ရုံးချုပ် <br /> &nbsp;</p>
+              <p data-aos="fade-right" data-aos-delay="1400"><i class="fa fa-phone-square" aria-hidden="true"></i> ဖုန်းနံပါတ် <br /> &nbsp;</p>
+              <p data-aos="fade-right" data-aos-delay="1600"><i class="fa fa-envelope" aria-hidden="true"></i> Email လိပ်စာ </p>
+              <p data-aos="fade-right" data-aos-delay="1800"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook </p>
+            </div>
+            <div class="col-md-9">
+              <p data-aos="fade-right" data-aos-delay="0">: <a href="">အမှတ် (၄၅)၊ အောင်မြေရတနာလမ်း၊ သုမင်္ဂလာအိမ်ယာ <br />&nbsp;&nbsp; သင်္ဃန်းကျွန်းမြို့နယ်၊ ရန်ကုန်၊ 11072 </a></p>
+              <p data-aos="fade-right" data-aos-delay="200">: <a href="tel:09765418190">09 7654 18 190 <br />&nbsp;&nbsp;09 7654 18 179</a></p>
+              <p data-aos="fade-right" data-aos-delay="400">: <a href="mailto:info@ghppcs.com">info@ghppcs.com</a></p>
+              <p data-aos="fade-right" data-aos-delay="600">: <a href="https://www.facebook.com/ppcsprofessionalcleaningservices">PPCS Professional Cleaning Services</a></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="contact-right col-md-6">
+            <form id="contact-form" method="post" class="tm-contact-form" action="mail/mail_handler.php" name="form">
+              <div class="form-item">
+                <input type="text" id="contact_name" name="visitor_name" class="form-input" 
+                required="required" data-validation-required-message="Please enter your name."/>        
+                <span class="enter"> နာမည် </span>
+              </div>
+              <div class="form-item">
+                <input type="tel" id="contact_number" name="visitor_phone" class="form-input"
+                required="required" data-validation-required-message="Please enter your contact number."/>
+                <span class="enter"> ဆက်သွယ်ရန်ဖုန်းနံပါတ် </span>
+              </div>
+              <div class="form-item">
+                <input type="email" id="contact_email" name="visitor_email" class="form-input"
+                required="required" data-validation-required-message="Please enter your email address."/>
+                <span class="enter">Email</span>
+              </div>
+              <div class="form-item">
+                <textarea rows="6" id="contact_message" name="visitor_message" class="form-input"
+                required="required" data-validation-required-message="Please enter a message."></textarea>
+                <span class="enter"> သင်ပြောလိုသော အချက်ကိုရေးပါ </span>
+              </div>
+              <div class="form-item">
+                <button type="submit" class="btn" value="SEND MESSAGE"> ပို့မည် </button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------ xxx ------------------>
+<div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.012994796031!2d96.18504811536633!3d16.82571142318809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193f09a3d2229%3A0xf64dc5023878e566!2sPPCS%20Cleaning%20Services!5e0!3m2!1sen!2smm!4v1591850735077!5m2!1sen!2smm" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+
+
+<script>
+      AOS.init({
+        duration: 1000,
+      });
+
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        autoplay:{
+            delay: 5000,
+            disableOninteraction: false
+        }
+    });
+</script>
+</body>
+</html>
