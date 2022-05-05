@@ -30,10 +30,11 @@
             </div>
             <div class="nav-list">
               <ul class="nav-item">
-                  <li class="nav-link"><a href="index.htm"> Home </a></li>
-
+                  <li class="nav-link"><a class="now" href="index.htm"> Home </a></li>
+                  <!-- <li class="nav-link"><a href="about_us.htm"> About Us </a></li> -->
+  
                   <li class="nav-link dropdown">
-                    <a class="dropdown-toggle now" href="about_us.htm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="dropdown-toggle" href="about_us.htm" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About Us
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -43,19 +44,20 @@
                       <a class="dropdown-item" href="about_us.htm#aboutus-client">Our Happy Clients</a>
                     </div>
                   </li>
-
+                  <!-- <li class="nav-link"><a href="service.htm"> Service </a></li> -->
+  
                   <li class="nav-link dropdown">
                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Cleaning Services</a>
-                      <a class="dropdown-item" href="#">Hig-risk Access Services</a>
-                      <a class="dropdown-item" href="#">Pest Control Services</a>
-                      <a class="dropdown-item" href="#">Disinfection Services</a>
+                      <a class="dropdown-item" href="service.htm#cleaning-services">Cleaning Services</a>
+                      <a class="dropdown-item" href="service.htm#high-risk">High-risk Access Services</a>
+                      <a class="dropdown-item" href="service.htm#pest-control">Pest Control Services</a>
+                      <a class="dropdown-item" href="service.htm#disinfection">Disinfection Services</a>
                     </div>
                   </li>
-
+  
                   <li class="nav-link"><a href="gallery.htm"> Gallery </a></li>
                   <li class="nav-link"><a href="contact.htm"> Contact </a></li>
               </ul>
@@ -97,13 +99,13 @@
                     </div>
                 </div>
           </div>
-
+  
             <div class="lan-switch">
-              <a href="mm/about_us.htm"><img class="mm-flag" src="assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
-              <a href="../about_us.htm"><img class="uk-flag" src="assets/ukflag.jpg" alt="English" title="English"></a>
+              <a href="mm/index.htm"><img class="mm-flag" src="assets/mmflag.jpg" alt="မြန်မာ" title="မြန်မာ"></a>
+              <a href="index.htm"><img class="uk-flag" src="assets/ukflag.jpg" alt="English" title="English"></a>
             </div>
           </div>
-
+  
         </nav>
       </div>
       <div onclick="menu()" class="bar" id="bar">
@@ -112,10 +114,10 @@
 <!------------------ xxx ------------------>
 <section id="service-banner">
     <div class="s-banner">
-        <h1 data-aos="zoom-in">Four Core Services</h1>
+        <h1 data-aos="zoom-in" class="mt-5">Four Core Services</h1>
         <div class="row">
             <div class="content-left col-md-6">
-                <h3 data-aos="fade-right" data-aos-delay="500">Cleaning Services</h3>
+                <h3 data-aos="fade-right" data-aos-delay="500" id="cleanig-services">Cleaning Services</h3>
                 <p>The company focuses on providing hygiene related services such as residential and commercial cleaning and pest control. These services are readily available across Myanmar.
                 <br>
                 
@@ -137,7 +139,7 @@
                 </div>
             </div>
             <div class="content-right col-md-6">
-                <h3 data-aos="fade-left" data-aos-delay="200">High-rise Access Services</h3>
+                <h3 data-aos="fade-left" data-aos-delay="200" id="high-risk">High-risk Access Services</h3>
                 <p>Through the use of rope access, we can safely access a wide variety of different commercial high rise applications. Commercial high rise access requires strict adherence to safety standards and should not be taken lightly. Proper training, knowledge, and experience are a core value at High Altitude Services. To get the job done safely, we had our service technicians trained properly by International Rope Access Trade Association, IRATA. Our technicians have Level 1, 2 and 3 certificates from IRATA.
                 </p>
                 <div data-aos="flip-down">
@@ -150,7 +152,7 @@
         </div>
         <div class="row">
             <div class="content-left col-md-6">
-                <h3 data-aos="fade-right">Pest Control Services</h3>
+                <h3 data-aos="fade-right"id="pest-control">Pest Control Services</h3>
                 <p>Residential Pest Control <br>
                     • Crawling and Flying Insects <br>
                     • Special Termite Protection Service <br>
@@ -177,7 +179,7 @@
                 </div>
              </div>
             <div class="content-right col-md-6">
-                <h3 data-aos="fade-left">Disinfection Services</h3>
+                <h3 data-aos="fade-left" id="disinfection">Disinfection Services</h3>
                 <p>As the cleaning experts, PPCS works closely with customers to understand which areas require disinfection and deep cleaning. Our focus is on establishing the cleaning solutions and methodology depending on our customers’ needs and severity level – we will work closely with you to ensure we provide the solutions that adhere to guidelines established by local authorities. We also offer high-frequency cleaning to disinfect high-touch or high-footfall areas and deep cleaning.
                     Depending on the severity levels, we advise customers on how to minimise risks through step-up (High frequency) cleaning. We continually keep our customers informed and aware of good hand hygiene habits, social distancing and advising in case of symptoms for the virus.
                    </p>
