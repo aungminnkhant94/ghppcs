@@ -386,23 +386,23 @@ p{
             }
         }
     } */
+}
 
-    @media screen and (min-width: 480px) {
-        height: 8rem;
-        width: 100%;
+
+@media only screen and (max-width: 900px) {
+    #carouselExampleControls {
+        height: 30rem;
     }
 }
 
 .carousel-inner > .carousel-item > img {
     height: 50rem;
+}
 
-    @media screen and (min-width: 480px) {
-        height: 8rem;
-        width: 100%;
+@media only screen and (max-width: 900px) {
+    .carousel-inner > .carousel-item > img {
+        height: 30rem;
     }
 }
 
-.slide {
-    height: 7rem;
-}
 
