@@ -247,6 +247,9 @@ p{
 }
 
 /* Slider */
+.clients {
+  text-align: center;
+}
 .customers {
   margin-top: 4rem;
 }

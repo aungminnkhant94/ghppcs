@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <!---------SCRIPT CDN-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -51,6 +50,11 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 </style>
 </head>
@@ -389,7 +393,7 @@ div.desc {
 <script>
   AOS.init({
         duration: 1000,
-      });
+  });
 
   var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
