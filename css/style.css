@@ -405,4 +405,30 @@ p{
     }
 }
 
+#footer {
+    padding: 5rem 0;
+}
+
+.footer {
+    /* background-color: #ebecec; */
+    padding: 5rem 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-heading {
+    font-family: 'Playfair Display SC', serif;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer-list {
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+.footer-anchor {
+    color: black;
+    text-decoration: none;
+}
 
